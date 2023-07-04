@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+    <main id="container">
+        <div class="img">
+            <img src="img/ilustracao.svg" alt="">
+        </div>
+
+
+        <div class="calculadora">
+            <form id="form">
+                <h1>Calculadora - IMC </h1>
+                <div class="input-box">
+                    <label for="weight"> Peso em Kg:</label>
+                    <div class="input-field">
+                        <i class="fa-sharp fa-solid fa-weight-scale"></i>
+                        <input id="weight" type="number" required> </input>
+                        <span>
+                            Kg
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height"> Altura em metros: </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-person"></i>
+                        <input id="height" type="number" required> </input>
+                        <span>
+                            M
+                        </span>
+                    </div>
+                </div>
+                <button id="calcular"> Calcular </button>
+                <button id="limpar"> Limpar </button>
+            </form>
+            <div class="infos">
+                <div id="resultado">
+                    <div id="imc">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="descricao">
+                        <span> </span>
+                    </div>
+                </div>
+
+                <div class="moreinfos">
+                    <a href="https://www.bbc.com/portuguese/geral-46311722" target="_blank">
+                        Mais informações sobre IMC
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                   
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+
+</body>
+
+</html>
